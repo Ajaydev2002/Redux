@@ -1,18 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Main from "./src/components/Main";
 import { Provider } from "react-redux";
-import store from "./src/redux/store";
-import AddDetails from "./src/components/AddDetails";
-import Form from "./src/components/UseReducer";
-import TaskApp from "./src/components/TodoList";
+import Main from "./my-vite-app/src/components/Main";
+import store from "./my-vite-app/src/redux/store";
+import AddDetails from "./my-vite-app/src/components/AddDetails";
+import Form from "./my-vite-app/src/components/UseReducer";
+import TaskApp from "./my-vite-app/src/components/TodoList";
 
 const Applayout = () => {
   return (
     <Provider store={store}>
       <div style={{display:"flex",flexDirection:"column",alignItems:"center"}}>
         <AddDetails/>
-        <Main />
+        <Main/>
         <Form/>
         <TaskApp/>
       </div>
